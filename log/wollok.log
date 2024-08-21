@@ -79,3 +79,8 @@
 {"level":"info","message":"⌛ Validating test.wlk","timeElapsed":101,"timestamp":"2024-08-21T13:49:38.924Z"}
 {"level":"info","message":"⌛ Building environment","timeElapsed":121,"timestamp":"2024-08-21T13:49:51.720Z"}
 {"level":"info","message":"⌛ Validating test.wlk","timeElapsed":164,"timestamp":"2024-08-21T13:49:51.885Z"}
+{"level":"info","message":"onRequest - STRONG_FILES_CHANGED:c:\\Users\\usuario\\Desktop\\WollokNuevo\\test.wl","timestamp":"2024-08-21T13:55:35.318Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":176,"timestamp":"2024-08-21T13:55:35.495Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":108,"timestamp":"2024-08-21T13:55:35.603Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Users/usuario/Desktop/WollokNuevo","timestamp":"2024-08-21T13:55:35.655Z"}
+{"level":"info","message":"Removing diagnostics from \\Users\\usuario\\Desktop\\WollokNuevo\\test.wl","timestamp":"2024-08-21T13:55:35.713Z"}
