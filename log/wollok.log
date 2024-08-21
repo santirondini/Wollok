@@ -84,3 +84,5 @@
 {"level":"info","message":"⌛ Building environment","timeElapsed":108,"timestamp":"2024-08-21T13:55:35.603Z"}
 {"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Users/usuario/Desktop/WollokNuevo","timestamp":"2024-08-21T13:55:35.655Z"}
 {"level":"info","message":"Removing diagnostics from \\Users\\usuario\\Desktop\\WollokNuevo\\test.wl","timestamp":"2024-08-21T13:55:35.713Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":145,"timestamp":"2024-08-21T13:56:16.215Z"}
+{"level":"info","message":"⌛ Validating test.wlk","timeElapsed":270,"timestamp":"2024-08-21T13:56:16.491Z"}
