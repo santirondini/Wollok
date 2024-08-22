@@ -90,3 +90,4 @@
 {"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Users/usuario/Desktop/Facultad/Wollok","timestamp":"2024-08-22T23:09:19.976Z"}
 {"level":"info","message":"⌛ Validating test.wlk","timeElapsed":109,"timestamp":"2024-08-22T23:09:20.158Z"}
 {"level":"info","message":"⌛ Validating prueba.wlk","timeElapsed":114,"timestamp":"2024-08-22T23:09:25.928Z"}
+{"level":"info","message":"⌛ Validating test.wlk","timeElapsed":125,"timestamp":"2024-08-22T23:09:34.817Z"}
