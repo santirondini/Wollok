@@ -109,3 +109,11 @@
 {"level":"info","message":"⌛ Validating prueba.wlk","timeElapsed":109,"timestamp":"2024-08-24T01:58:58.182Z"}
 {"level":"info","message":"⌛ Validating test.wlk","timeElapsed":144,"timestamp":"2024-08-24T01:58:58.327Z"}
 {"level":"info","message":"⌛ Validating prueba.wlk","timeElapsed":133,"timestamp":"2024-08-24T02:00:02.828Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":256,"timestamp":"2024-08-24T02:01:56.640Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Users/usuario/Desktop/Facultad/Wollok","timestamp":"2024-08-24T02:01:56.645Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":165,"timestamp":"2024-08-24T02:01:56.813Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":156,"timestamp":"2024-08-24T02:01:56.998Z"}
+{"level":"info","message":"⌛ Validating prueba.wlk","timeElapsed":289,"timestamp":"2024-08-24T02:01:57.289Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":106,"timestamp":"2024-08-24T02:01:57.396Z"}
+{"level":"info","message":"⌛ Validating test.wlk","timeElapsed":171,"timestamp":"2024-08-24T02:01:57.573Z"}
+{"level":"info","message":"⌛ Validating prueba.wlk","timeElapsed":161,"timestamp":"2024-08-24T02:01:57.759Z"}
