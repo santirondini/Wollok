@@ -43,9 +43,8 @@ object fiesta {
 }
 
 object chuy {
-
+    
     method tieneTodoListo() = true
-
 }
 
 object capy {
