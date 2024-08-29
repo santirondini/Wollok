@@ -1,0 +1,20 @@
+import heroes.*
+
+describe "test para heroes" {
+
+    test "uma puede volar con el helicoptero" {
+        assert.that(uma.puedeVolar())
+    }
+  test "uma no puede volar con el colectivo" {
+    uma.cambiarTransporte(colectivo)
+    assert.notThat(uma.puedeVolar()) 
+  }
+
+  test "ernesto come alfajo y aumenta su energia"{
+    ernesto.comeAlfajor()
+    assert.equals(55,ernesto.energia())
+  }
+
+
+  
+}
