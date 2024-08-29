@@ -1,5 +1,4 @@
 
-
 object maniac {
 
     var estrellas = 0 
@@ -38,12 +37,9 @@ object fiesta {
         anfitrion.tieneTodoListo()
         globos >= 50
     }
-
-
 }
 
-object chuy {
-    
+object chuy {   
     method tieneTodoListo() = true
 }
 
@@ -63,7 +59,6 @@ object capy {
     method tieneTodoListo (){
         latas < 3
     }
-  
 }
 
 object yvoty {
@@ -79,5 +74,4 @@ object yvoty {
     method tieneTodoListo (){
         bateria >= 50
     }
-
 }
