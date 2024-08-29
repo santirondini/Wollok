@@ -1244,3 +1244,22 @@
 {"level":"error","message":"✘ Completions for node failed: Error: [Parameter]{4cfa75} at heroes.wlk:28 exhausted all cases without a match [Parameter]{4cfa75} at heroes.wlk:28 exhausted all cases without a match","stack":"Error: [Parameter]{4cfa75} at heroes.wlk:28 exhausted all cases without a match\n    at c:\\Users\\usuario\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.3.3\\node_modules\\wollok-ts\\dist\\extensions.js:85:11\n    at completionsForNode (c:\\Users\\usuario\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.3.3\\server\\out\\functionalities\\autocomplete\\node-completion.js:10:44)\n    at c:\\Users\\usuario\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.3.3\\server\\out\\functionalities\\autocomplete\\autocomplete.js:26:154\n    at c:\\Users\\usuario\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.3.3\\server\\out\\server.js:198:20\n    at c:\\Users\\usuario\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.3.3\\server\\node_modules\\vscode-languageserver\\lib\\common\\server.js:593:20\n    at handleRequest (c:\\Users\\usuario\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.3.3\\server\\node_modules\\vscode-jsonrpc\\lib\\common\\connection.js:493:41)\n    at handleMessage (c:\\Users\\usuario\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.3.3\\server\\node_modules\\vscode-jsonrpc\\lib\\common\\connection.js:339:13)\n    at processMessageQueue (c:\\Users\\usuario\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.3.3\\server\\node_modules\\vscode-jsonrpc\\lib\\common\\connection.js:362:17)\n    at Immediate._onImmediate (c:\\Users\\usuario\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.3.3\\server\\node_modules\\vscode-jsonrpc\\lib\\common\\connection.js:334:13)\n    at process.processImmediate (node:internal/timers:478:21)","timestamp":"2024-08-29T19:20:25.336Z"}
 {"level":"info","message":"⌛ Building environment","timeElapsed":174,"timestamp":"2024-08-29T19:20:25.507Z"}
 {"level":"info","message":"⌛ Validating heroes.wlk","timeElapsed":125,"timestamp":"2024-08-29T19:24:52.268Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":165,"timestamp":"2024-08-29T19:29:33.347Z"}
+{"level":"info","message":"⌛ Validating heroes.wlk","timeElapsed":111,"timestamp":"2024-08-29T19:31:38.800Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":114,"timestamp":"2024-08-29T19:31:39.039Z"}
+{"level":"info","message":"⌛ Validating heroes.wlk","timeElapsed":104,"timestamp":"2024-08-29T19:31:40.433Z"}
+{"level":"info","message":"⌛ Validating heroes.wlk","timeElapsed":107,"timestamp":"2024-08-29T19:31:43.189Z"}
+{"level":"info","message":"⌛ Validating heroes.wlk","timeElapsed":112,"timestamp":"2024-08-29T19:31:44.434Z"}
+{"level":"info","message":"⌛ Validating heroes.wlk","timeElapsed":103,"timestamp":"2024-08-29T19:31:45.131Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":169,"timestamp":"2024-08-29T19:31:47.234Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":108,"timestamp":"2024-08-29T19:31:49.312Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":132,"timestamp":"2024-08-29T19:31:50.671Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":101,"timestamp":"2024-08-29T19:31:53.013Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":105,"timestamp":"2024-08-29T19:35:13.561Z"}
+{"level":"info","message":"⌛ Validating heroes.wlk","timeElapsed":103,"timestamp":"2024-08-29T19:35:13.724Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":118,"timestamp":"2024-08-29T19:39:22.957Z"}
+{"level":"info","message":"⌛ Validating heroes.wlk","timeElapsed":106,"timestamp":"2024-08-29T19:39:25.396Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":124,"timestamp":"2024-08-29T19:39:27.008Z"}
+{"level":"info","message":"⌛ Validating heroes.wlk","timeElapsed":198,"timestamp":"2024-08-29T19:39:27.306Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":102,"timestamp":"2024-08-29T19:39:27.548Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":121,"timestamp":"2024-08-29T19:39:39.307Z"}
