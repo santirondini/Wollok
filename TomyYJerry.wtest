@@ -1,0 +1,33 @@
+import TomyJerry.*
+
+
+describe "test de tomy y jerry"{
+
+    test "tom no puede comer a jerry que esta a 120 metros" {
+        assert.notThat(tom.puedeComer(120))
+    }
+
+    test "tom tampoco quiere comerlo"{
+        assert.notThat(tom.quiereComer(jerry,120))
+    }
+
+    test "tom puede comer a nibbles que esta a 96 de distancia, gastando 48 de energia"{
+        assert.equals(tom.energiaPostComida(nibbles),48)
+        assert.that(tom.puedeComer(96))
+    }
+
+    test "tom no va a querer comer a nibble ya que solo recibe 47 de energia"{
+        assert.notThat(tom.quiereComer(nibbles,96))
+        assert.equals(tom.energiaPostComida(nibbles),47)
+    }
+
+    test "si nibbles esta a 60 metros => tom puede comerlo gastando 30 de energia"{
+        assert.that(tom.puedeComer(60))
+        assert.equals(tom.energiaPostComida(nibbles),30)
+    }
+
+    test "si nibbles esta a 60 metros => tom quiere comerlo recibiiendo 47 de energia"{
+        assert.that(tom.quiereComer(nibbles,60))
+        assert.equals(tom.energiaPostComida(nibbles),47)
+    }
+}
