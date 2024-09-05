@@ -25,14 +25,12 @@ object tom {
 
     method comparacionDeEnergias(antes,despues) = antes > despues
 
-
     method puedeComer(distancia) {
         const energiaAntes = self.energia()
         const energiaDespues = self.energiaPostCorrida(distancia)
         return self.comparacionDeEnergias(energiaAntes, energiaDespues)
     }
     
-
     method quiereComer(raton,distancia){
         const energiaAGastar = self.energiaPostCorrida(distancia)
         const energiaAGanar = self.energiaPostComida(raton)
@@ -57,7 +55,7 @@ object jerry {
 }
 
 object nibbles {
-
+    
     method peso () = 35
 
 }
