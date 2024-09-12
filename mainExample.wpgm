@@ -8,14 +8,10 @@ program PepitaGame {
 	game.width(10)
 
 	// add assets in asset folder, for example, for the background
-    game.boardGround("fondo2.jpg")
-
-	//
+    game.boardGround("fondo2.png")
 
 	//game.showAttributes(pepita) //Debug
 
 	game.start()
-
-	console.println("partido")
 }
 
