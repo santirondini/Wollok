@@ -815,3 +815,27 @@
 {"level":"info","message":"⌛ Building environment","timeElapsed":118,"timestamp":"2024-09-05T18:44:51.402Z"}
 {"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":107,"timestamp":"2024-09-05T18:44:51.963Z"}
 {"exitCode":"SIGHUP","level":"info","message":"👾 Game executed mainExample.PepitaGame on c:/Users/usuario/Desktop/Facultad/Wollok","timeElapsed":140452,"timestamp":"2024-09-05T18:46:36.832Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":149,"timestamp":"2024-09-12T16:47:35.670Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Users/usuario/Desktop/Facultad/Wollok","timestamp":"2024-09-12T16:47:35.680Z"}
+{"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":147,"timestamp":"2024-09-12T16:47:36.354Z"}
+{"level":"info","message":"⌛ Validating Ejercicios/afa.wlk","timeElapsed":103,"timestamp":"2024-09-12T16:49:04.076Z"}
+{"level":"info","message":"onRequest - STRONG_FILES_CHANGED:c:\\Users\\usuario\\Desktop\\Facultad\\Wollok\\Ejercicios\\afaTest.wtest","timestamp":"2024-09-12T16:49:15.124Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":152,"timestamp":"2024-09-12T16:49:15.276Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":123,"timestamp":"2024-09-12T16:49:15.400Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Users/usuario/Desktop/Facultad/Wollok","timestamp":"2024-09-12T16:49:15.478Z"}
+{"level":"info","message":"Removing diagnostics from \\Users\\usuario\\Desktop\\Facultad\\Wollok\\Ejercicios\\afaTest.wtest","timestamp":"2024-09-12T16:49:15.505Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":257,"timestamp":"2024-09-12T17:25:38.943Z"}
+{"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":422,"timestamp":"2024-09-12T17:25:39.370Z"}
+{"level":"info","message":"⌛ Validating Ejercicios/afa.wlk","timeElapsed":238,"timestamp":"2024-09-12T17:25:39.610Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":479,"timestamp":"2024-09-12T18:02:01.803Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Users/usuario/Desktop/Facultad/Wollok","timestamp":"2024-09-12T18:02:01.809Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":268,"timestamp":"2024-09-12T18:02:02.079Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":206,"timestamp":"2024-09-12T18:02:02.295Z"}
+{"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":232,"timestamp":"2024-09-12T18:02:02.528Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":115,"timestamp":"2024-09-12T18:02:02.795Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":104,"timestamp":"2024-09-12T18:02:03.616Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":188,"timestamp":"2024-09-12T18:02:03.855Z"}
+{"level":"info","message":"⌛ Validating testExample.wtest","timeElapsed":234,"timestamp":"2024-09-12T18:02:04.090Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":114,"timestamp":"2024-09-12T18:02:04.298Z"}
+{"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":144,"timestamp":"2024-09-12T18:02:04.528Z"}
+{"level":"info","message":"⌛ Validating mainExample.wpgm","timeElapsed":129,"timestamp":"2024-09-12T18:02:04.894Z"}
