@@ -39,6 +39,7 @@ const caperusita = new Personaje()
 const abuela = new Personaje()
 const chancho = new Personaje()
 
+
 object bruja {
 
     var casa = []
@@ -47,8 +48,8 @@ object bruja {
         casa.add(personaje)
     }  
 
-    method estaContenta(){
+    method estaContenta() =
         casa.filter {personaje => personaje.peso()}
         .sum() > 500
-    }    
+
 }
