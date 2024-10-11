@@ -1,5 +1,6 @@
 
 class Golondrina {
+    
     var energia = 100
 
     method energia () = energia 
@@ -13,6 +14,8 @@ class Golondrina {
     }
 
 }
+
+
 
 
 
@@ -38,4 +41,9 @@ Ejemplos:
 
 const marcelo = new Golondrina()
 
+
+// Clase 3/10 **********************************************************
+
+// ver el inicialize()
+ 
 
