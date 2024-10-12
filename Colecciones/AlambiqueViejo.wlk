@@ -6,7 +6,7 @@ object carrera {
 
     var ciudad = "Buenos Aires"
 
-    method puedeCorrer(vehiculo) = vehiculo.puedeCorrerEn.contains(ciudad)
+    method puedeCorrer(vehiculo) = vehiculo.puedeCorrerEn().contains(ciudad)
 
     method inscribirse(vehiculo) {
         if (self.puedeCorrer(vehiculo)) {
