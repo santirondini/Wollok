@@ -2,7 +2,7 @@
 
 class Empleado{
 
-    var salud 
+    var salud = 100
 
     var habilidades = []
 
@@ -12,13 +12,13 @@ class Empleado{
 
     method salud() = salud 
 
-    method saludCritica() 
+    method saludCritica() // metodo abstracto. Sirve para que lo entienda 
 
-    method incapacitado() = salud < saludCritica    
+    method estaIncapacitado() = salud < self.saludCritica() // esto antes estaba asi: salud < saludCritica    
 
     method contieneLaHabilidad(habilidad) = habilidades.contains(habilidad)
     
-    method puedeUsarHabilidad(habilidad) = self.incapacitado().negate() && self.contieneLaHabilidad(habilidad)
+    method puedeUsarHabilidad(habilidad) = self.estaIncapacitado().negate() && self.contieneLaHabilidad(habilidad)
 
     method cumplirMision(mision) =
     mision.habilidadesNecesiarias().all {habilidad => self.puedeUsarHabilidad(habilidad)}  
