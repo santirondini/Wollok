@@ -1,7 +1,7 @@
 
 class Operacion {
 
-    var valor 
+    var  property  valor 
 
     var inmueble
 
@@ -89,7 +89,7 @@ class Inmueble{
 
     const tamanio
 
-    const cantidadAmbientes
+    var property cantidadAmbientes
 
     var operacion 
 
@@ -103,6 +103,9 @@ class Inmueble{
         operacion = nuevaOperacion
     }
 }
+
+
+const casa = new Casa(tamanio = 5, cantidadAmbientes = 3, plusXzoma = 1, estaReservada = true,  )
 
 class Casa inherits Inmueble{
 
