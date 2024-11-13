@@ -20,8 +20,12 @@ class Empleado{
     
     method puedeUsarHabilidad(habilidad) = self.estaIncapacitado().negate() && self.contieneLaHabilidad(habilidad)
 
-    method cumplirMision(mision) =
+    method reuneLasHabilidades(mision) =
     mision.habilidadesNecesiarias().all {habilidad => self.puedeUsarHabilidad(habilidad)}  
+
+    method cumplirMision(mision) =
+    self.reuneLasHabilidades(mision)
+    
 
     method restarVida(mision) {
         salud =- mision.peligrosidad()
@@ -34,6 +38,8 @@ class Empleado{
         self.restarVida(mision)
         self.registrarMision(mision)
     }
+
+    method consecuencia
 
     
 }
@@ -99,4 +105,8 @@ class Equipo {
         if (self.cumplenLaMision(mision)) 
         self.restarVida(mision) 
     }    
+}
+
+object siEsOficinista {
+
 }
