@@ -1,5 +1,4 @@
 
-
 class Empleado{
 
     var salud = 100
