@@ -12,7 +12,14 @@ class Persona {
     }
 
     method pedir(persona,elemento){
-    
+        if(persona.criterioAsociado() = sonSordos){
+            // le da el primero 
+        } else if(persona.criterioAsociado() = comerTranquilo ){
+            // le da todos los elementos 
+        } else if(persona.criterioAsociado() = intercambianPosiciones){
+            // le da el objeto e intercambia posiciones
+        } else if(persona.criterioAsociado() = )
+
     }
 
     method cambiarCriterio(nuevoCriterio){
@@ -27,9 +34,7 @@ object sonSordos {
     var personaConCriterio 
 
     method dar(elemento,persona) {
-        const primerElemento = personaConCriterio.elementosCerca().head()
-        personaConCriterio.elementosCerca().remove(primerElemento)
-        persona.elementosCerca().add(primerElemento)
+
     }
 }
 
