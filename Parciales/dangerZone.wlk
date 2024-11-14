@@ -27,7 +27,10 @@ class Empleado{
     
 
     method restarVida(mision) {
+        if(salud > mision.peligrosidad() )
         salud =- mision.peligrosidad()
+        else 
+        salud = 0 
     }
     
     method registrarMision(mision)
@@ -35,13 +38,12 @@ class Empleado{
     method realizarMision(mision) {
         if(self.cumplirMision(mision)) 
         self.restarVida(mision)
-        self.registrarMision(mision)
+        self.consecuenciaDeMision(mision)
     }
 
-    method consecuencia
-
-    
+    method consecuenciaDeMision(mision) 
 }
+
 
 class Mision {
 
@@ -67,7 +69,7 @@ class Espia inherits Empleado {
         return nuevas 
     }
     
-    override method registrarMision(mision){
+    override method consecuenciaDeMision(mision){
     const nuevas = self.habilidadesNuevas(mision)
     habilidades = habilidades + nuevas 
     }
@@ -85,7 +87,21 @@ class Oficinista inherits Empleado {
 
     method estrellas() = estrellas
 
+    method sumarEstrella() {
+        estrellas =+ 1
+    }
+
+    method tieneTresEstrellas() = estrellas > 3 
+
+    method serEspia() = {
+        
+    }
+
     override method saludCritica() = 40 - 5*estrellas
+
+    override method consecuenciaDeMision(mision) {
+        self.sumarEstrella()
+    }
 }
 
 class Equipo {
@@ -98,14 +114,12 @@ class Equipo {
     method restarVida(mision) {
     const perdida = mision.peligrosidad() / 3
     integrantes.forEach { integrante => integrante.salud() - perdida}
+    integrantes.removeAllSuchThat {integrante => integrante.salud() == 0}
     }
-    
+
     method realizarMision(mision) {
         if (self.cumplenLaMision(mision)) 
         self.restarVida(mision) 
+        
     }    
-}
-
-object siEsOficinista {
-
 }
