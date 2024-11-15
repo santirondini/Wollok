@@ -585,3 +585,6 @@
 {"level":"info","message":"⌛ Validating Parciales/asadito.wlk","timeElapsed":127,"timestamp":"2024-11-15T15:00:37.287Z"}
 {"level":"info","message":"⌛ Validating Parciales/asadito.wlk","timeElapsed":113,"timestamp":"2024-11-15T15:00:37.830Z"}
 {"error":["wollok.lang.EvaluationError wrapping TypeScript Error: Could not resolve reference to new or its a reference to void"],"level":"info","message":"🖥️ REPL execution - build failed for c:\\Users\\usuario\\Desktop\\Facultad\\Wollok","ok":false,"timeElapsed":667,"timestamp":"2024-11-15T15:03:19.669Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":178,"timestamp":"2024-11-15T15:03:24.445Z"}
+{"level":"info","message":"⌛ Validating Parciales/asadito.wlk","timeElapsed":185,"timestamp":"2024-11-15T15:03:24.633Z"}
+{"level":"info","message":"⌛ Validating Colecciones/LoboFeroz.wlk","timeElapsed":133,"timestamp":"2024-11-15T15:03:24.862Z"}
