@@ -1,17 +1,23 @@
 class Persona {
 
-    var property posicion 
+    var posicion
+
+    method posicion() = posicion
+
+    method cambiarPosicion(nueva) {
+        posicion = nueva
+    } 
 
     var criterioAsociado 
 
-    var elementosCerca 
+    var elementosCerca = []
 
     method contieneElElemento(elemento) = elementosCerca.contains(elemento)
 
     method pedir(persona,elemento){
         if(persona.contieneElElemento(elemento)) {
         criterioAsociado.dar(persona,self,elemento)
-        } else self.error("la persona no contiene el elemento")
+        }
     }
 
     method cambiarCriterio(nuevoCriterio){
@@ -19,17 +25,12 @@ class Persona {
     }
 }
 
-
-
-const guido = new Persona(elementosCerca = ["tenedor","cuchillo","una peronista"],criterioAsociado = comerTranquilo, posicion = 3 )
-const santino = new Persona(elementosCerca = ["mate","carne","cordero","termo"], criterioAsociado = sonSordos, posicion = 10 )
-
 object sonSordos {
 
     method dar(otorgador, receptor, elemento) {
-        const primero = otorgador.elementosCerca().head()
-        otorgador.elementosCerca().remove(primero)
+        const primero = otorgador.elementosCerca().first()
         receptor.elementosCerca().add(primero)
+        otorgador.elementosCerca().remove(primero)
     }
 }
 
@@ -57,3 +58,4 @@ object normal {
     }
 }
 
+const mateo = new Persona(criterioAsociado = normal, posicion = 3, elementosCerca = [])

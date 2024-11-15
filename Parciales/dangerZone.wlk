@@ -93,10 +93,6 @@ class Oficinista inherits Empleado {
 
     method tieneTresEstrellas() = estrellas > 3 
 
-    method serEspia() = {
-        
-    }
-
     override method saludCritica() = 40 - 5*estrellas
 
     override method consecuenciaDeMision(mision) {

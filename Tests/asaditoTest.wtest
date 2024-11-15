@@ -3,8 +3,10 @@ import Parciales.asadito.*
 describe "Test de asadito" {
 
     test "guido le pide a santino un cordero" {
-        guido.pedir(santino,"cordero")
-        assert.that(guido.elementosCercanos().contains("mate"))
+         const guido = new Persona(elementosCerca = ["tenedor","cuchillo","una peronista"],criterioAsociado = comerTranquilo, posicion = 3 )
+         const santino = new Persona(elementosCerca = ["mate","carne","cordero","termo"], criterioAsociado = sonSordos, posicion = 10 )
+         guido.pedir(santino,"cordero")
+         assert.that(guido.elementosCercanos().contains("mate"))
     }
 }
 
