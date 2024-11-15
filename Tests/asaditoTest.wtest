@@ -1,0 +1,10 @@
+import Parciales.asadito.*
+
+describe "Test de asadito" {
+
+    test "guido le pide a santino un cordero" {
+        guido.pedir(santino,"cordero")
+        assert.that(guido.elementosCercanos().contains("mate"))
+    }
+}
+

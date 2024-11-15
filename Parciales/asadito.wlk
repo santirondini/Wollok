@@ -1,25 +1,17 @@
-
 class Persona {
 
-    var posicion 
+    var property posicion 
 
-    var criterioAsociado
+    var criterioAsociado 
 
-    var elementosCerca = ["sal", "aceite","vinagre" , "aceto", "oliva", "cuchillo que corta bien"]
+    var elementosCerca 
 
-    method dar(elemento,persona) {
-        
-    }
+    method contieneElElemento(elemento) = elementosCerca.contains(elemento)
 
     method pedir(persona,elemento){
-        if(persona.criterioAsociado() = sonSordos){
-            // le da el primero 
-        } else if(persona.criterioAsociado() = comerTranquilo ){
-            // le da todos los elementos 
-        } else if(persona.criterioAsociado() = intercambianPosiciones){
-            // le da el objeto e intercambia posiciones
-        } else if(persona.criterioAsociado() = )
-
+        if(persona.contieneElElemento(elemento)) {
+        criterioAsociado.dar(persona,self,elemento)
+        } else self.error("la persona no contiene el elemento")
     }
 
     method cambiarCriterio(nuevoCriterio){
@@ -27,25 +19,41 @@ class Persona {
     }
 }
 
-// Criterios para dar
+
+
+const guido = new Persona(elementosCerca = ["tenedor","cuchillo","una peronista"],criterioAsociado = comerTranquilo, posicion = 3 )
+const santino = new Persona(elementosCerca = ["mate","carne","cordero","termo"], criterioAsociado = sonSordos, posicion = 10 )
 
 object sonSordos {
 
-    var personaConCriterio 
-
-    method dar(elemento,persona) {
-
+    method dar(otorgador, receptor, elemento) {
+        const primero = otorgador.elementosCerca().head()
+        otorgador.elementosCerca().remove(primero)
+        receptor.elementosCerca().add(primero)
     }
 }
 
 object comerTranquilo {
-
+    
+    method dar(otorgador, receptor, elemento) {
+        receptor.elementosCerca().addAll(receptor.elementosCerca())
+    }
 }
 
-object intercambianPosiciones{
-
+object intercambianPosiciones {
+    
+    method dar(otorgador, receptor, elemento) {
+        var tempPosicion = otorgador.posicion()
+        otorgador.posicion(receptor.posicion())
+        receptor.posicion(tempPosicion)
+    }
 }
 
 object normal {
 
+    method dar(otorgador,receptor,elemento) {
+    otorgador.elementosCerca().remove(elemento)
+    receptor.elementosCerca().add(elemento)
+    }
 }
+
