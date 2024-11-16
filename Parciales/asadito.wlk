@@ -167,7 +167,7 @@ class CombinacionDeCriterios inherits Criterio{
 
 class Dietetico inherits Criterio {
 
-    override method condicion(comida) = comida.kcal() < 500
+    override method condicion(comida) = not comida.esPesada()
     
     override method comer(persona,comida) {
     if(self.condicion(comida))
