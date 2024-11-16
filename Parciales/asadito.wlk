@@ -126,7 +126,7 @@ class Comida {
     method esPesadad() = kcal > 500  
 }
 
-// Criterio 
+// CRITERIOS PARA COMER
 
 class Criterio {
 
@@ -188,5 +188,3 @@ class Alternado inherits Criterio {
     }    
 }
 
-
-// Punto 3)

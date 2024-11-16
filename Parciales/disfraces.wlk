@@ -1,4 +1,3 @@
-import dragonBallZ.*
 
 class Fiesta{
     
@@ -19,8 +18,8 @@ class Fiesta{
 
     method cambianTrajes(invitado1,invitado2) {
         var percha = invitado1.disfraz()
-        invitado1.disfraz(invitado2.disfraz())  
-        invitado2.disfraz(percha)
+        invitado1.cambiarDisfraz(invitado2.disfraz())  
+        invitado2.cambiarDisfraz(percha)
     }
 
     method estanConformes(invitado1,invitado2) = invitado1.estaSatisfechoConDisfraz() && invitado2.estaSatisfechoConDisfraz()
@@ -76,6 +75,11 @@ class Persona {
         paraCambiante = !paraCambiante
     }
 
+    method cambiarDisfraz(disfrazNuevo){
+        disfraz = disfrazNuevo
+        disfrazNuevo.portador(self) 
+    }
+
     method esSexy() = 
     personalidad.esSexy(self) 
 
@@ -95,7 +99,7 @@ class Caprichoso inherits Persona{
 
 class Pretencioso inherits Persona {
 
-    var fechaActual // Puedo tambien asociar a una persona, una fiesta y sacar la fecha de la fiesta
+    var fechaActual // Tambien, le puedo asociar a una persona una fiesta y sacar la fecha de la fiesta
 
     override method condicionEspecial() = disfraz.fechaConfeccion() - fechaActual <= 30 
 }
@@ -135,7 +139,7 @@ class Disfraz {
 
     var fiestaAsociada 
 
-    var portador
+    var property portador
 
     var fechaConfeccion //AAAAMMDD
 
@@ -149,7 +153,6 @@ class Disfraz {
 
     method puntuacion() =
         caracteristica.puntuacion(self)
-    
     
 }
 
