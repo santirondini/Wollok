@@ -104,16 +104,12 @@ class Inmueble{
     }
 }
 
-
-const casa = new Casa(tamanio = 5, cantidadAmbientes = 3, plusXzoma = 1, estaReservada = true,  )
-
 class Casa inherits Inmueble{
 
     var valorCasa
 
     override method valor() = valorCasa + plusXzona 
 }
-
 
 class PH inherits Inmueble{
 
