@@ -3364,3 +3364,9 @@
 {"level":"info","message":"⌛ Validating Parciales/juegoDeTronos.wlk","timeElapsed":148,"timestamp":"2024-11-16T23:07:50.671Z"}
 {"level":"info","message":"⌛ Validating Parciales/juegoDeTronos.wlk","timeElapsed":150,"timestamp":"2024-11-16T23:07:50.821Z"}
 {"level":"info","message":"⌛ Validating Parciales/juegoDeTronos.wlk","timeElapsed":150,"timestamp":"2024-11-16T23:07:50.971Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":389,"timestamp":"2024-11-16T23:10:36.099Z"}
+{"level":"info","message":"⌛ Validating Parciales/disfraces.wlk","timeElapsed":276,"timestamp":"2024-11-16T23:10:36.379Z"}
+{"level":"info","message":"⌛ Validating Parciales/angryBirds.wlk","timeElapsed":217,"timestamp":"2024-11-16T23:10:36.597Z"}
+{"level":"info","message":"⌛ Validating Parciales/intensamente.wlk","timeElapsed":211,"timestamp":"2024-11-16T23:10:36.808Z"}
+{"level":"info","message":"⌛ Validating Parciales/dangerZone.wlk","timeElapsed":187,"timestamp":"2024-11-16T23:10:36.995Z"}
+{"level":"info","message":"⌛ Validating Parciales/juegoDeTronos.wlk","timeElapsed":172,"timestamp":"2024-11-16T23:10:37.167Z"}
