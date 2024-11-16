@@ -1,43 +1,92 @@
+
 class Persona {
 
-    var posicion
+    var property posicion 
 
-    method posicion() = posicion
+    var property criterioAsociado 
 
-    method cambiarPosicion(nueva) {
-        posicion = nueva
-    } 
+    var property elementosCerca = []
 
-    var criterioAsociado 
+    var comidasIngeridas = []
 
-    var elementosCerca = []
+    var criterioParaComer
+
+    method criterioParaPasarlaBien()
 
     method contieneElElemento(elemento) = elementosCerca.contains(elemento)
 
     method pedir(persona,elemento){
         if(persona.contieneElElemento(elemento)) {
-        criterioAsociado.dar(persona,self,elemento)
+        persona.criterioAsociado().dar(persona,self,elemento)
         }
     }
 
     method cambiarCriterio(nuevoCriterio){
         criterioAsociado = nuevoCriterio
     }
+
+    method ingerirComida(comida) {
+        comidasIngeridas.add(comida)
+    }
+
+    method comerDeLaBandeja(bandeja) {
+        criterioAsociado.comerBandeja(self,bandeja)
+    }
+
+    method estaPipon() =
+    comidasIngeridas.any{comida => comida.esPesada()}
+
+    method laEstaPasandoBien() = (not comidasIngeridas.isEmpty()) && self.criterioParaPasarlaBien()
+
 }
+
+class Osky inherits Persona{
+
+    override method criterioParaPasarlaBien() = true 
+}
+
+class Moni inherits Persona{
+
+    override method criterioParaPasarlaBien() = posicion == 1 
+}
+
+class Facu inherits Persona{
+
+    method comioCarne() = 
+    comidasIngeridas.any {comida => comida.esCarne()}
+    
+    override method criterioParaPasarlaBien() =
+    self.comioCarne() 
+}
+
+class Vero inherits Persona{
+
+    method noTieneMasDe3elementosCerca() =
+    elementosCerca.size() <= 2
+    
+    override method criterioParaPasarlaBien() = self.noTieneMasDe3elementosCerca() 
+}
+
+
+
+// Criterios para dar
 
 object sonSordos {
 
     method dar(otorgador, receptor, elemento) {
-        const primero = otorgador.elementosCerca().first()
-        receptor.elementosCerca().add(primero)
-        otorgador.elementosCerca().remove(primero)
-    }
+        const primerElemento = otorgador.elementosCerca().first()
+        receptor.elementosCerca().add(primerElemento)
+        otorgador.elementosCerca().remove(primerElemento)
+        }
 }
 
 object comerTranquilo {
     
     method dar(otorgador, receptor, elemento) {
-        receptor.elementosCerca().addAll(receptor.elementosCerca())
+        var elementos []
+        elementos = otorgador.elementosCerca()
+        receptor.elementosCerca().addAll(elementos)
+        otorgador.elementosCerca().clear()
     }
 }
 
@@ -58,4 +107,86 @@ object normal {
     }
 }
 
-const mateo = new Persona(criterioAsociado = normal, posicion = 3, elementosCerca = [])
+
+// Punto 2)
+
+class Bandeja {
+
+    var comida = []
+}
+
+class Comida {
+
+    var nombre 
+
+    var kcal 
+
+    var esCarne  
+
+    method esPesadad() = kcal > 500  
+}
+
+// Criterio 
+
+class Criterio {
+
+    method condicion(comida) // comida individuales
+
+    method comer(persona,comida) // acción para comer
+
+    method comerBandeja(persona,bandeja) {
+        bandeja.map {comidaDeLaTabla => self.comer(persona,comidaDeLaTabla)} 
+    }
+}
+
+class Vegetariano inherits Criterio{
+
+    override method condicion(comida) = not comida.esCarne()
+    
+    override method comer(persona,comida) {
+        if(self.condicion(comida))
+        persona.ingerirComida(comida)
+        else
+        self.error("La persona es vegetariana. No come carne") 
+        }
+}
+
+class CombinacionDeCriterios inherits Criterio{
+
+    var criterios = []
+
+    method todosLosCriteriosSeCumplen(comida) =
+    criterios.all{criterio => criterio.condicion(comida)}
+
+    override method comer(persona,comida) {
+        if(self.todosLosCriteriosSeCumplen(comida))
+        persona.ingerirComida(comida)
+    } 
+
+}
+
+class Dietetico inherits Criterio {
+
+    override method condicion(comida) = comida.kcal() < 500
+    
+    override method comer(persona,comida) {
+    if(self.condicion(comida))
+    persona.ingerirComida(comida)
+    }    
+}
+
+class Alternado inherits Criterio {
+
+    override method comerBandeja(persona,bandeja) {
+        var alternar = true
+        bandeja.forEach { comida =>
+            if (alternar) {
+                persona.ingerirComida(comida)
+            }
+            alternar = !alternar
+        }
+    }    
+}
+
+
+// Punto 3)

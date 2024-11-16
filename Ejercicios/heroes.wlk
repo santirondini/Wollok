@@ -1,7 +1,8 @@
 // Superherores:
 
 object ernesto {
-   var energia = 50
+    
+    var energia = 50
 
     method energia () = energia
 
