@@ -3370,3 +3370,5 @@
 {"level":"info","message":"⌛ Validating Parciales/intensamente.wlk","timeElapsed":211,"timestamp":"2024-11-16T23:10:36.808Z"}
 {"level":"info","message":"⌛ Validating Parciales/dangerZone.wlk","timeElapsed":187,"timestamp":"2024-11-16T23:10:36.995Z"}
 {"level":"info","message":"⌛ Validating Parciales/juegoDeTronos.wlk","timeElapsed":172,"timestamp":"2024-11-16T23:10:37.167Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":150,"timestamp":"2024-11-16T23:54:54.840Z"}
+{"level":"info","message":"⌛ Validating Colecciones/PeligroPorDistraccion.wlk","timeElapsed":174,"timestamp":"2024-11-16T23:54:55.076Z"}
