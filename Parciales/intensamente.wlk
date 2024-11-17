@@ -10,6 +10,8 @@ class Chica {
 
     var property coeficienteDeFelicidad
 
+    var property recuerdosAsenatdos = []
+
     var property recuerdosDelDia = []
 
     var property pensamientoCentrales = []
@@ -18,8 +20,26 @@ class Chica {
 
     method vivirEvento(evento) {
         evento.consecuenciasDeEvento(self)
-        recuerdosDelDia.add(evento)
+        recuerdosDelDia.add(evento) // asentar evento 
     }
+
+    method elRecuerdoExiste(recuerdo) =
+    recuerdosAsenatdos.contains(recuerdo)
+    
+    method niegaUnRecuerdo(recuerdo) {
+    if(emocionDominante.niega(recuerdo,self))
+    self.error("La emoción dominante negó el recuerdo")
+    }
+
+    method asentarRecuerdos() {
+        recuerdosAsenatdos.addAll(recuerdosDelDia)
+    }
+
+    method irAdormir() {
+
+    }
+
+    method asentarConPalabrac
 
     method recuerdosRecientes() = recuerdosDelDia.take(5)
 
@@ -27,10 +47,12 @@ class Chica {
 
     method pensamientoCentralesComplicados() =
     self.conocerPensamientosCentrales().filter { pensamiento => pensamiento.dificilDeExplicar()}
-
 }
 
-const riley = new Chica(emociones = [alegria], emocionDominante = alegria, coeficienteDeFelicidad = 15)
+object asentamiento {
+
+    
+}
 
 const pesadilla = new Recuerdo(descripcion = "pesadilla gay",fecha = 20050425)
 
@@ -52,21 +74,41 @@ class Recuerdo {
     } 
 }
 
+class Emocion {
 
-object alegria {
+    method respuestaAlEvento(evento,persona)
+    
+    method niega(recuerdo,persona)
+}
+
+const alegria = new Alegria()
+const tristeza = new Tristeza() 
+const furia = new Furia()
+const disgusto = new Disgusto()
+const temor = new Temor()
+
+
+class Alegria inherits Emocion {
 
     method condicion(persona) = persona.felicidad() > 500
     
-    method respuestaAlEvento(evento,persona) {
+    override method respuestaAlEvento(evento,persona) {
     if(self.condicion(persona))
     persona.pensamientoCentrales().add(evento)     
     }
+
+    override method niega(recuerdo,persona) =
+    not recuerdo.emocionDominanteEnElMomento(persona) == self 
+
 }
 
 
-object tristeza{
+class Tristeza inherits Emocion {
 
-    method respuestaAlEvento(evento,persona) {
+    override method niega(recuerdo,persona) =
+    recuerdo.emocionDominanteEnElMomento(persona) == alegria 
+
+    override method respuestaAlEvento(evento,persona) {
         persona.pensamientoCentrales().add(evento)
         persona.coeficienteDeFelicidad(persona.coeficienteDeFelicidad()*0.9)
         if(persona.coeficienteDeFelicidadBajo())
@@ -75,15 +117,21 @@ object tristeza{
 
 }
 
-object disgusto {
+class Temor inherits Emocion {
 
-    method respuestaAlEvento(evento,persona) {}
+    override method respuestaAlEvento(evento,persona) {}
+
+    override method niega(recuerdo,persona) = false
 }
 
-object temeroso {
-    method respuestaAlEvento(evento,persona) {}
+class Disgusto inherits Emocion {
+    override method respuestaAlEvento(evento,persona) {}
+
+    override method niega(recuerdo,persona) = false
 }
 
-object furia {
-    method respuestaAlEvento(evento,persona) {}
+class Furia inherits Emocion {
+    override method respuestaAlEvento(evento,persona) {}
+
+    override method niega(recuerdo,persona) = flase 
 }
